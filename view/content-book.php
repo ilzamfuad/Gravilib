@@ -1,7 +1,4 @@
-
-
 <div class="ui divider"></div>
-  <br>
   <div class="ui grid">
     <div class="three wide column" id="side">
       <div class="ui secondary vertical fluid menu">
@@ -35,14 +32,19 @@
 
                                 while($databuku = mysql_fetch_assoc($querybuku)){
                                     echo '<div class="card">';
-                                    echo '<a class="image" href="#"></a>';
+                                    echo '<div class="image"></div>';
                                     echo '<div class="content">';
-                                    echo '<a class="header" href="#">'.$databuku['nama_buku'].'</a>';
+                                    echo '<div class="header">'.$databuku['nama_buku'].'</div>';
                                     echo '<div class="description">
                                               '.$databuku['deskripsi_buku'].'
                                             </div>';
-                                    echo '</div>
-                                        </div>';
+                                    echo '</div>';
+                                    echo '<div class="extra content">';
+                                    echo '<span class="right floated">';
+                                     echo '<a class="ui inverted red button" href="?p=detail-book&buku='.$databuku['nama_buku'].'">Detail</a>';
+                                    echo '</span>';
+                                    echo  '</div>';
+                                    echo  '</div>';
                                       }
                                 ?>
 

@@ -25,6 +25,13 @@
                         </button>
                     </div>
                 </div>
+                <div class="item">
+                    <a href="?p=cart" class="item">
+                        <div class="ui header cart">
+                            <i class="big blue add to cart icon"></i>
+                        </div>
+                    </a>
+                </div>
                 
                 <div class="ui dropdown item">
                   <div class="text">Welcome : <?php echo $login_session?></div>
@@ -60,6 +67,13 @@
                             <i class="search icon"></i>
                         </button>
                     </div>
+                </div>
+                <div class="item">
+                    <a href="?p=cart" class="item">
+                        <div class="ui header cart">
+                            <i class="big blue add to cart icon"></i>
+                        </div>
+                    </a>
                 </div>
                 
                 <div class="ui dropdown item" >

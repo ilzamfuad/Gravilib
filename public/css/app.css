@@ -100,6 +100,9 @@
 .ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after {
   color: #ff5144; }
 
+.ui.grid {
+  margin-top: 10px; }
+
 /* body */
 body {
   background: #e6e6e6;
@@ -141,5 +144,19 @@ footer {
 
 #side {
   margin-left: 30px; }
+
+#map {
+  width: 100%;
+  height: 100%; }
+
+#map-container {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 100%;
+  margin-right: 30px; }
+
+#booking {
+  margin: 20px; }
 
 /*# sourceMappingURL=app.css.map */
