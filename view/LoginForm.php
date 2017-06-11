@@ -10,7 +10,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Snippet: Login Form</title>
+  <title>Login Form</title>
   
   
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
@@ -32,6 +32,7 @@
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
       <input id="submit" name="submit" class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+      <a href="RegistrationForm.php" class="btn btn-lg btn-success btn-block">Daftar</a>
     </form>
   </div>
   

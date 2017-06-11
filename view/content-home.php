@@ -5,10 +5,10 @@
                     <div class="ui inverted vertical masthead center aligned segment">
                     <div class="ui text container" id="banner-text">
                       <h1 class="ui inverted header" >
-                        Imagine-a-Company
+                        Selamat Datang Di Web Ini
                       </h1>
-                      <h2>Do whatever you want when you want to.</h2>
-                      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+                      <h2>Tempat Dimana Bisa Booking Buku Perpustakaan Secara Online</h2>
+                      
                     </div>
 
                   </div>
@@ -83,7 +83,7 @@
                                                 $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';}
                                         echo '<div class="card">';
                                         echo '<a class="image" href="?p=content-detail">
-                                            <img src="public/images/gravicloth-logo.png">
+                                            <img src="public/images/logo-sementara.png">
                                         </a>';
                                         echo '<div class="content">
                                                 <a class="header" href="#">'.

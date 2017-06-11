@@ -13,18 +13,11 @@
                 </a>
             </div>
             <a href="?p=content-home" class="active item">Home</a>
-            <a href="?p=content-library" class="item">Library</a>
-            <a href="?p=content-book" class="item">Book</a>
+            <a href="?p=content-library" class="item">Perpustakaan</a>
+            <a href="?p=content-book" class="item">Buku</a>
 
             <div class="right menu">
-                <div class="item">
-                    <div class="ui transparent icon input">
-                        <input placeholder="Search..." type="text" style="color: white">
-                        <button class="ui icon grey button">
-                            <i class="search icon"></i>
-                        </button>
-                    </div>
-                </div>
+                
                 <div class="item">
                     <a href="?p=cart" class="item">
                         <div class="ui header cart">
@@ -37,9 +30,7 @@
                   <div class="text">Welcome : <?php echo $login_session?></div>
                   <i class="dropdown icon"></i>
                   <div class="menu">
-                    <div class="item">
-                        <a href="view/Logout.php" id="button-login">Logout</a>
-                    </div>
+                        <a href="view/Logout.php" class="item">Logout</a>
                   </div>
                 </div>
                 
@@ -56,18 +47,11 @@
                 </a>
             </div>
             <a href="?p=content-home" class="active item">Home</a>
-            <a href="?p=content-library" class="item">Library</a>
-            <a href="?p=content-book" class="item">Book</a>
+            <a href="?p=content-library" class="item">Perpustakaan</a>
+            <a href="?p=content-book" class="item">Buku</a>
 
             <div class="right menu">
-                <div class="item">
-                    <div class="ui transparent icon input">
-                        <input placeholder="Search..." type="text">
-                        <button class="ui icon gray button">
-                            <i class="search icon"></i>
-                        </button>
-                    </div>
-                </div>
+                
                 <div class="item">
                     <a href="?p=cart" class="item">
                         <div class="ui header cart">
@@ -80,9 +64,7 @@
                   <div class="text">Welcome : <?php echo $login_session?></div>
                   <i class="dropdown icon"></i>
                   <div class="menu">
-                    <div class="item">
-                        <a href="view/Logout.php" id="button-login">Logout</a>
-                    </div>
+                        <a href="view/Logout.php" class="item">Logout</a>
                   </div>
                 </div>
                 

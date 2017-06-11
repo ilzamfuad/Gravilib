@@ -1,6 +1,6 @@
 <div class="ui grid">
     <div class="three wide column" id="side">
-      <img src="public/images/gravicloth-logo.png">
+      <img src="public/images/logo-sementara.png">
       <?php 
       $user = $login_session;
       $book = $_GET['buku'];

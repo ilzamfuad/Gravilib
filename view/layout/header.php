@@ -19,18 +19,12 @@ if(isset($_SESSION['login_user'])){
             <a href="?p=content-book" class="item">Book</a>
 
             <div class="right menu">
-                <div class="item">
-                    <a href="?p=cart" class="item">
-                        <div class="ui header cart">
-                            <i class="big blue add to cart icon"></i>
-                        </div>
-                    </a>
-                </div>
+                
                 <div class="item">
                     <a href="view/LoginForm.php" class="ui button" id="button-login">Login</a>
                 </div>
                 <div class="item">
-                    <a class="ui primary button" id="button-login">Sign Up</a>
+                    <a href="view/RegistrationForm.php" class="ui primary button" id="button-login">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -49,19 +43,12 @@ if(isset($_SESSION['login_user'])){
             <a href="?p=content-book" class="item">Book</a>
 
             <div class="right menu">
-                <div class="item">
-                    <a href="?p=cart" class="item">
-                        <div class="ui header cart">
-                            <i class="big red add to cart icon"></i>
-                        </div>
-                    </a>
-                </div>
 
                 <div class="item">
                     <a href="view/LoginForm.php" class="ui button" id="button-login">Login</a>
                 </div>
                 <div class="item">
-                    <a class="ui primary button" id="button-login">Sign Up</a>
+                    <a href="view/RegistrationForm.php" class="ui primary button" id="button-login">Sign Up</a>
                 </div>
             </div>
         </div>

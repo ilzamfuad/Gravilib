@@ -26,8 +26,13 @@
                     echo '<div class="card">
                         <div class="content">';
                     echo '<div class="header">'.$databuku['nama_buku'].'</div>';
+                    if($databooking['status_pinjam']=='0'){
+                    echo '<div class="ui right floated">Status : Pending</div>';
+                    }else{
+                      echo '<div class="ui right floated">Status : Sudah Dipinjam</div>';
+                    }
                     echo '<div class="description">'.$databuku['deskripsi_buku'].'</div>';
-                    echo '<a class="ui right floated inverted red button">Batal</a>';
+                    echo '<a href="?p=cart-proses&buku='.$databuku['id_buku'].'&user='.$id_user.'" class="ui right floated inverted red button">Batal</a>';
                     
                     echo '</div>
                         </div>';
