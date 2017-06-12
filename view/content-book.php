@@ -41,7 +41,7 @@
                                     echo '</div>';
                                     echo '<div class="extra content">';
                                     echo '<span class="right floated">';
-                                     echo '<a class="ui inverted red button" href="?p=detail-book&buku='.$databuku['nama_buku'].'">Detail</a>';
+                                     echo '<a class="ui inverted red button" href="?p=detail-book&buku='.$databuku['id_buku'].'">Detail</a>';
                                     echo '</span>';
                                     echo  '</div>';
                                     echo  '</div>';

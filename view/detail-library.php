@@ -2,6 +2,8 @@
     <div class="three wide column" id="side">
       <img src="public/images/logo-sementara.png">
       <?php 
+      $connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
+      $db = mysql_select_db("perpustakaan", $connection);
       $perpus = $_GET['perpus'];
       ?>
       

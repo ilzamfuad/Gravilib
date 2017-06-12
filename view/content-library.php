@@ -8,7 +8,8 @@
       <div class="ui container" style="margin-bottom: 21px;">
         <div class="ui three stackable cards">
           <?php
-
+          $connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
+          $db = mysql_select_db("perpustakaan", $connection);
           $queryperpus = mysql_query("select * from perpus", $connection);
 
           while ($dataperpus = mysql_fetch_assoc($queryperpus))
@@ -21,7 +22,9 @@
             echo '</div>';
             echo '<div class="extra content">';
             echo '<span class="right floated">';
-            echo '<a class="ui inverted red button" href="?p=detail-library&perpus=' . $dataperpus['id_perpus'] . '">Detail</a>';
+            
+              echo '<a class="ui inverted red button" href="?p=detail-library&perpus=' . $dataperpus['id_perpus'] . '">Detail</a>';
+            
             echo '</span>';
             echo '</div>';
             echo '</div>';

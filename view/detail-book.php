@@ -2,11 +2,22 @@
     <div class="three wide column" id="side">
       <img src="public/images/logo-sementara.png">
       <?php 
-      $user = $login_session;
+      if(!isset($login_session)){
+        $user = "";
+      }else{
+        $user = $login_session;
+      }
       $book = $_GET['buku'];
       ?>
       <div>
-      <a class="ui teal button" href=<?php echo '"?p=booking-proses&user='.$user.'&buku='.$book.'"' ?>>Pesan</a></div>
+      <?php 
+      if(!isset($login_session)){?>
+        <a class="ui teal button" href="view/LoginForm.php">Pesan</a></div>
+      <?php }else{ ?>
+        <a class="ui teal button" href=<?php echo '"?p=booking-proses&user='.$user.'&buku='.$book.'"' ?>>Pesan</a></div>
+        <?php } ?>
+
+
     </div>
     <div class="twelve wide column">
     <?php 
@@ -15,8 +26,8 @@
        if(empty($_GET['buku'])){
          $_GET['buku'] = "";
         }
-        $namabuku = $_GET['buku'];
-       $query = mysql_query("select * from buku WHERE nama_buku = '$namabuku'", $connection);
+        $idbuku = $_GET['buku'];
+       $query = mysql_query("select * from buku WHERE id_buku = '$idbuku'", $connection);
 
         while($data = mysql_fetch_assoc($query)){
           echo '<h1 class="ui header">'.$data['nama_buku'].'</h1>
@@ -68,7 +79,7 @@
         });
 
         <?php 
-        $query1 = mysql_query("select * from buku WHERE nama_buku = '$namabuku'", $connection);
+        $query1 = mysql_query("select * from buku WHERE id_buku = '$idbuku'", $connection);
         while($data1 = mysql_fetch_assoc($query1)){
           $perpusdata1 = $data1['id_perpus'];
           $queryperpus1 = mysql_query("select * from perpus WHERE id_perpus='$perpusdata1'", $connection);

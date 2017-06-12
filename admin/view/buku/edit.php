@@ -1,6 +1,4 @@
 	<h2>Edit Data Buku</h2>
-	
-	<p><a href="?p=buku/index-book">Beranda</a> / <a href="tambah.php">Tambah Data</a></p>
 
 	<?php
 	//proses mengambil data ke database untuk ditampilkan di form edit berdasarkan siswa_id yg didapatkan dari GET id -> edit.php?id=siswa_id
@@ -36,7 +34,7 @@
 		</div>
 		<div class="field">
 			<label>Tahun Terbit</label>
-		    <input type="text" name="tahun_terbit" value="<?php echo $data['tahun_terbit']; ?>" placeholder="Tahun Terbit"  required>
+		    <input id="datepicker" type="text" name="tahun_terbit" value="<?php echo $data['tahun_terbit']; ?>" placeholder="Tahun Terbit"  required>
 		</div>
 		<div class="field">
 			<label>Deskripsi Buku</label>
@@ -94,5 +92,5 @@
 		</div>
 
 			<input class="ui green button" type="submit" name="submit" value="Simpan">
-			
+			<a class="ui red button" href="?p=buku/index-book">Batal</a>
 	</form>

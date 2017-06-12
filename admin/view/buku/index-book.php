@@ -1,7 +1,7 @@
 
 	<h2>Data Buku</h2>
 	
-	<p><a href="index.php">Beranda</a> / <a href="?p=buku/tambah">Tambah Data</a></p>
+	<p><a class="ui blue button" href="?p=buku/tambah">Tambah Data</a></p>
 
 	
 	<table class="ui fixed celled table">

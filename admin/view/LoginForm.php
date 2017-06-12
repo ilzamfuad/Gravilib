@@ -10,7 +10,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Snippet: Login Form</title>
+  <title>Login Form</title>
   
   
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
@@ -24,7 +24,8 @@
 <body>
     <div class="wrapper">
     <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">       
-      <h2 class="form-signin-heading">Please login</h2>
+    <a href="../../index.php" class="btn btn-lg btn-warning btn-block" style="width: 135px;height: 45px;margin-left: 175px;">Login as User</a>
+      <h2 class="form-signin-heading">Please login Admin</h2>
       <p><?php echo $error; ?></p>
       <input id="name" name="username" class="form-control" placeholder="username" type="text" placeholder="Email Address" required="" autofocus="">
       <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="">      

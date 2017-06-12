@@ -1,5 +1,10 @@
 <?php
+    $tampilan = "";
 	include('view/session.php');
+    $query = mysql_query("SELECT * FROM petugas WHERE username_petugas = '$login_session'") or die(mysql_error());
+    while($data = mysql_fetch_assoc($query)){
+        $tampilan = $data['nama_petugas'];
+    }
 ?>
 
 <header>
@@ -16,7 +21,7 @@
             <div class="right menu">
 
                 <div class="ui dropdown item">
-                  <div class="text">Welcome : <?php echo $login_session?></div>
+                  <div class="text">Welcome : <?php echo $tampilan; ?></div>
                   <i class="dropdown icon"></i>
                   <div class="menu">
                     <div href="view/Logout.php" class="item">
@@ -41,7 +46,7 @@
             <div class="right menu">
 
                 <div class="ui dropdown item" >
-                  <div class="text">Welcome : <?php echo $login_session?></div>
+                  <div class="text">Welcome : <?php echo $tampilan; ?></div>
                   <i class="dropdown icon"></i>
                   <div class="menu">
                     <a href="view/Logout.php" class="item">

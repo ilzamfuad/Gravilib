@@ -24,7 +24,8 @@
 <body>
     <div class="wrapper">
     <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">       
-      <h2 class="form-signin-heading">Please login</h2>
+    <a href="../admin/index.php" class="btn btn-lg btn-warning btn-block" style="width: 135px;height: 45px;">Login as Admin</a>
+      <h2 class="form-signin-heading">Please login User</h2>
       <p><?php echo $error; ?></p>
       <input id="name" name="username" class="form-control" placeholder="username" type="text" placeholder="Email Address" required="" autofocus="">
       <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="">      

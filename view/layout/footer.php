@@ -21,8 +21,8 @@
           </div>
         </div>
         <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+          <h4 class="ui inverted header">Gravilib</h4>
+          <p>Tempat Dimana Bisa Booking Buku Perpustakaan Secara Online</p>
         </div>
       </div>
     </div>

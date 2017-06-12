@@ -13,16 +13,19 @@ include 'view/session.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
-    <title>Gravicloth - Custom Clothing IT Brand</title>
+    <title>Gravilib - Booking Book Online</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="public/css/semantic.min.css" />
     <link rel="stylesheet" type="text/css" href="public/css/app.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/semantic.min.js"></script>
     <script src="public/js/following-header.js"></script>
     <script src="public/js/banner-carousel.js"></script>
+    <script src="public/js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 </head>
 
@@ -71,5 +74,6 @@ include 'view/session.php';
 
 
 </body>
+<?php mysql_close($connection); ?>
 
 </html>

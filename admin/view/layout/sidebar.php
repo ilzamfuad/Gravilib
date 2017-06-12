@@ -1,4 +1,5 @@
 <?php
+$admin = "";
   if(!empty($_REQUEST['p'])){
     $activePage = $_REQUEST['p'];
   }else{
@@ -17,7 +18,7 @@
           if($data['status_petugas'] == "1"){
             $admin = "1";
           }else{
-            $admin = "0";
+            $admin = "2";
           }
       }
 ?>
@@ -27,9 +28,15 @@
   <div class="ui grid">
     <div class="three wide column" id="side">
       <div class="ui secondary vertical fluid menu">
-      <?php if($admin === "1"){ ?>
+
+      <!-- admin -->
+      <?php if($admin == "1"){ ?>
         <a class="<?php if ($activePage=="content-home") {echo "item active"; } else  {echo "item";}?>" href="?p=content-home">
         Home
+        </a>
+
+        <a class="<?php if ($activePage=="user/index") {echo "item active"; } else  {echo "item";}?>" href="?p=user/index">
+        User Management
         </a>
 
         <a class="<?php if ($activePage=="buku/index-book") {echo "item active"; } else  {echo "item";}?>" href="?p=buku/index-book">
@@ -39,13 +46,19 @@
         <a class="<?php if ($activePage=="perpus/index") {echo "item active"; } else  {echo "item";}?>" href="?p=perpus/index">
         Perpustakaan
         </a>
+
+        <a class="<?php if ($activePage=="report/index") {echo "item active"; } else  {echo "item";}?>" href="?p=report/index">
+        Report
+        </a>
+
+        <!-- resepsionis -->
         <?php }else{ ?>
         <a class="<?php if ($activePage=="content-home") {echo "item active"; } else  {echo "item";}?>" href="?p=content-home">
         Home
         </a>
 
-        <a class="<?php if ($activePage=="buku/index-book") {echo "item active"; } else  {echo "item";}?>" href="?p=buku/index-book">
-        Buku
+        <a class="<?php if ($activePage=="resepsionis/index") {echo "item active"; } else  {echo "item";}?>" href="?p=resepsionis/index">
+        Peminjaman
         </a>
         <?php } ?>
       </div>

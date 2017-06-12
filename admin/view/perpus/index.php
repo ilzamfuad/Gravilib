@@ -1,7 +1,7 @@
 
 	<h2>Simple CRUD</h2>
 	
-	<p><a href="index.php">Beranda</a> / <a href="?p=perpus/tambah">Tambah Data</a></p>
+	<p><a class="ui blue button" href="?p=perpus/tambah">Tambah Data</a></p>
 	
 	<h3>Data Buku</h3>
 	

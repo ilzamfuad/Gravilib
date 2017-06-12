@@ -4,8 +4,6 @@
 
 	<h2>Tambah Data Buku</h2>
 	
-	<p><a href="?p=buku/index-book">Beranda</a> / <a href="?p=buku/tambah">Tambah Data</a></p>
-	
 	<form class="ui form" action="?p=buku/tambah-proses" method="post">
 		<div class="field">
 			<label>Nama Buku</label>
@@ -13,7 +11,7 @@
 		</div>
 		<div class="field">
 			<label>Tahun Terbit</label>
-		    <input type="text" name="tahun_terbit" placeholder="Tahun Terbit" required>
+		    <input id="datepicker" type="text" name="tahun_terbit" placeholder="Tahun Terbit" required>
 		</div>
 		<div class="field">
 			<label>Deskripsi Buku</label>
@@ -21,7 +19,7 @@
 		</div>
 		<div class="field">
 			<label>Kategori</label>
-			<select class="ui fluid dropdown" required>
+			<select name="kategori" class="ui fluid dropdown" required>
 			<option value="">Pilih Kategori</option>
 						<?php 
 							$sqlkategori = "SELECT * FROM kategori";
@@ -37,7 +35,7 @@
 		</div>
 		<div class="field">
 			<label>Penerbit</label>
-			<select class="ui fluid dropdown" required>
+			<select name="penerbit" class="ui fluid dropdown" required>
 			<option value="">Pilih Penerbit</option>
 						<?php 
 							$sqlpenerbit = "SELECT id_penerbit,nama_penerbit FROM penerbit";
@@ -52,7 +50,7 @@
 		</div>
 		<div class="field">
 			<label>Perpustakaan</label>
-			<select class="ui fluid dropdown" required>
+			<select name="perpus" class="ui fluid dropdown" required>
 			<option value="">Pilih Perpustakaan</option>
 						<?php 
 							$sqlperpus = "SELECT id_perpus,nama_perpus FROM perpus";
@@ -66,6 +64,6 @@
 					</select>
 		</div>
 
-		<input class="ui primary button" type="submit" name="submit" value="Tambah"></td>
-			
+		<input class="ui primary button" type="submit" name="submit" value="Tambah">
+		<a class="ui red button" href="?p=buku/index-book">Batal</a>
 	</form>

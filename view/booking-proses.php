@@ -10,12 +10,8 @@ while($datauser = mysql_fetch_assoc($queryuser)){
 
 	$bookinguser = $datauser['id_user'];
 }
-$querybuku = mysql_query("select id_buku from buku WHERE nama_buku='$buku'", $connection);
-while($databuku = mysql_fetch_assoc($querybuku)){
-	$bookingbuku = $databuku['id_buku'];
-}
 
-$input = mysql_query("INSERT INTO booking VALUES(NULL, '$date', '$bookinguser', '$bookingbuku', '0')") or die(mysql_error());
+$input = mysql_query("INSERT INTO booking VALUES(NULL, '$date', '','$bookinguser', '$buku', '0')") or die(mysql_error());
 
 if($input){
 		

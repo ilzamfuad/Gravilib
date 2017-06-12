@@ -1,4 +1,6 @@
 	<h2>Edit Data Perpustakaan</h2>
+	
+	<p><a href="?p=perpus/index-book">Beranda</a> / <a href="?p=perpus/tambah">Tambah Data</a></p>
 
 	<?php
 	//proses mengambil data ke database untuk ditampilkan di form edit berdasarkan siswa_id yg didapatkan dari GET id -> edit.php?id=siswa_id
@@ -49,6 +51,6 @@
 		    <input type="text" name="longitude" value="<?php echo $data['longitude']; ?>" placeholder="Longitude" required>
 		</div>
 		<input class="ui green button" type="submit" name="submit" value="Simpan">
-		<a class="ui red button" href="?p=perpus/index">Batal</a>
+		
 			
 	</form>

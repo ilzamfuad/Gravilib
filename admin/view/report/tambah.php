@@ -4,6 +4,8 @@
 
 	<h2>Tambah Data perpus</h2>
 	
+	<p><a href="?p=perpus/index-book">Beranda</a> / <a href="?p=perpus/tambah">Tambah Data</a></p>
+	
 	<form class="ui form" action="?p=perpus/tambah-proses" method="post">
 		<div class="field">
 			<label>Nama Perpus</label>
@@ -27,5 +29,5 @@
 		</div>
 
 		<input class="ui primary button" type="submit" name="submit" value="Tambah"></td>
-		<a class="ui red button" href="?p=perpus/index">Batal</a>
+			
 	</form>

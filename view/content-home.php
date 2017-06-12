@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div class="eight wide column">
-                                    <a href="?p=content-category" class="ui right floated inverted red button" id="button-lihat"'>Lihat Selengkapnya</a>
+                                    <a href=<?php echo '"?p=content-book&data='.$data['id_kategori'].'"' ?> class="ui right floated inverted red button" id="button-lihat"'>Lihat Selengkapnya</a>
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@
                                                 $stringCut = substr($string, 0, 100);
                                                 $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';}
                                         echo '<div class="card">';
-                                        echo '<a class="image" href="?p=content-detail">
+                                        echo '<a class="image" href="index.php?p=detail-book&buku='.$databuku['id_buku'].'">
                                             <img src="public/images/logo-sementara.png">
                                         </a>';
                                         echo '<div class="content">
