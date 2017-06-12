@@ -10,14 +10,13 @@
 			$username = $_POST['username'];
 			$password = $_POST['password'];
 					// Membangun koneksi ke database
-			$connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
-			// Mencegah MySQL injection 
+			include('../config/db.php');
 
 			$username = stripslashes($username);
 			$password = stripslashes($password);
 			$username = mysql_real_escape_string($username);
 			$password = mysql_real_escape_string($password);
-			$db = mysql_select_db("perpustakaan", $connection);
+		
 			// SQL query untuk memeriksa apakah karyawan terdapat di database?
 			$query = mysql_query("select * from user where password_user='$password' AND username_user='$username'", $connection);
 			$rows = mysql_num_rows($query);

@@ -3,8 +3,7 @@
     <div class="three wide column" id="side">
       <div class="ui secondary vertical fluid menu">
       <?php 
-                $connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
-                $db = mysql_select_db("perpustakaan", $connection);
+                include('config/db.php');
                 $query = mysql_query("select * from kategori", $connection);
 
                 while($data = mysql_fetch_assoc($query)){

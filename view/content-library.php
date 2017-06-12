@@ -8,8 +8,7 @@
       <div class="ui container" style="margin-bottom: 21px;">
         <div class="ui three stackable cards">
           <?php
-          $connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
-          $db = mysql_select_db("perpustakaan", $connection);
+          include('config/db.php');
           $queryperpus = mysql_query("select * from perpus", $connection);
 
           while ($dataperpus = mysql_fetch_assoc($queryperpus))

@@ -1,8 +1,6 @@
 <?php
-// Membangun Koneksi dengan Server dengan nama server, user_id dan password sebagai parameter
-$connection = mysql_connect("localhost", "root", "");
-// Seleksi Database
-$db = mysql_select_db("perpustakaan", $connection);
+
+include('config/db.php');
 // Memulai Session
 // Menyimpan Session
 $user_check=$_SESSION['login_user'];

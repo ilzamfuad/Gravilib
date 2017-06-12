@@ -21,8 +21,7 @@
     </div>
     <div class="twelve wide column">
     <?php 
-       $connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
-       $db = mysql_select_db("perpustakaan", $connection);
+       include('config/db.php');
        if(empty($_GET['buku'])){
          $_GET['buku'] = "";
         }

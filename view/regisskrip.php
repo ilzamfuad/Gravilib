@@ -14,10 +14,7 @@
 			$tanggal = $_POST['tanggal'];
 			$tempat = $_POST['tempat'];
 					// Membangun koneksi ke database
-			$connection = mysql_connect("localhost", "root", "") or die("gak isok konek");
-			// Mencegah MySQL injection 
-
-			$db = mysql_select_db("perpustakaan", $connection);
+			include('../config/db.php');
 			// SQL query untuk memeriksa apakah karyawan terdapat di database?
 			$input = mysql_query("INSERT INTO user VALUES(NULL, '$name', '$alamat', '$tempat', '$tanggal', '$username', '$password')") or die(mysql_error());
 	
